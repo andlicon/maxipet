@@ -1,19 +1,20 @@
-import React from 'react';
-import { useBanner } from '../hooks/useBanner';
+import React, { useState } from 'react';
 import Banner from '../components/Banner';
+import BannerControls from '../components/BannerControls';
 
 const BannerDisplay = ({ images }) => {
-  const {
-    currentImage,
-    next,
-    prev
-  } = useBanner({ images });
+  const [current, setCurrent] = useState(images[0]);
 
-  console.log(currentImage)
+  const currentImageHandler = (newImage) => {
+    setCurrent(newImage);
+  }
 
   return (
     <div className='banner__display'>
-      <Banner image={currentImage} />
+      <Banner image={current} />
+      <BannerControls
+        images={images}
+        imageHandler={currentImageHandler} />
     </div>
   )
 }
