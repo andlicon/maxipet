@@ -1,4 +1,12 @@
+:root {
+  --banner-height: 580px;
+}
+
 .banner__display {
-  height: 580px;
-  background-color: purple;
+  height: var(--banner-height);
+}
+
+.banner_img{
+  height: var(--banner-height);
+  max-width: 1440px;
 }
