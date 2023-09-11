@@ -1,7 +1,7 @@
 import React from 'react';
 // import Image from 'next/image';
 // import logo from '../public/logo.png';
-import Header from '../components/Header';
+import Header from '../components/NavBar';
 
 function HomePage() {
   return (

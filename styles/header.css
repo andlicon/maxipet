@@ -1,25 +1,25 @@
-.header>:nth-child(1) {
+.navBar>:nth-child(1) {
   background-color: var(--bg-primary);
   height: 26px;
 }
 
-.header>:nth-child(1)>* {
+.navBar>:nth-child(1)>* {
   max-height: 16px;
 }
 
-.header>:nth-child(1) * {
+.navBar>:nth-child(1) * {
   color: white;
 }
 
-.header>:nth-child(2) {
+.navBar>:nth-child(2) {
   min-height: 60px;
 }
 
-.header>:nth-child(3) {
+.navBar>:nth-child(3) {
   max-height: 60px;
 }
 
-.header__logo {
+.navBar__logo {
   min-height: 46px;
   width: 169.46px;
 }
