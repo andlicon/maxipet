@@ -89,3 +89,9 @@ body {
   }
 }
 /* purgecss end ignore */
+
+
+/* constants */
+:root {
+  --bg-primary: #E2081E;
+}

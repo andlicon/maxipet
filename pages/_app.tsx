@@ -4,6 +4,7 @@ import Router from 'next/router';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles.css';
+import '../styles/header.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
