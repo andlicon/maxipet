@@ -1,4 +1,5 @@
 import React from 'react';
+import SelectLocation from './SelectLocation';
 import { socialMediaList } from '../constant/socialMedia';
 
 function Header() {
@@ -6,6 +7,7 @@ function Header() {
   return (
     <div className='header'>
       <div className="container mx-auto p-1 flex flex-row justify-end">
+        <SelectLocation />
         <div className='socialMedias mx-2'>
           {
             socialMediaList.map((sm, index) => {
