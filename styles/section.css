@@ -1,0 +1,15 @@
+.section {
+  background-color: lightgray;
+}
+
+.section__title {
+  color: var(--color-highly-primary);
+}
+
+.section__subtitle {
+  font-family: Calibri;
+  line-height: 18.09px;
+  font-size: var(--size-small);
+  font-weight: var(--weight-regular);
+  color: var(--color-disabled);
+}

@@ -9,6 +9,7 @@ import '../styles/selectLocation.css';
 import '../styles/pageNavigate.css';
 import '../styles/searchBar.css';
 import '../styles/banner.css';
+import '../styles/section.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {

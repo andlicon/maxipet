@@ -117,6 +117,7 @@ body {
   --txt-color-link: #25BF47;
   --txt-color-primary: #333333;
   --color-disabled: #C8C2BE;
+  --color-highly-primary: #E2081E;
 }
 
 body, body * {
@@ -162,7 +163,7 @@ h2, h3, h4, h5 {
   font-weight: var(--weight-medium);
 }
 
-small {
+small, .small {
   font-family: var(--family-mulish);
   font-weight: var(--weight-semi-bold);
   font-size: var(--size-small);
