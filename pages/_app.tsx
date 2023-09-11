@@ -4,7 +4,7 @@ import Router from 'next/router';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles.css';
-import '../styles/header.css';
+import '../styles/navBar.css';
 import '../styles/selectLocation.css';
 import '../styles/pageNavigate.css';
 import '../styles/searchBar.css';
