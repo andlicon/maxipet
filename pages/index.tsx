@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '../public/logo.png';
+import Header from '../components/Header';
 
 function HomePage() {
   return (
     <div className="min-h-screen w-screen bg-white flex dark:bg-black">
+      <Header />
       <section className="max-w-screen-md m-auto h-full">
         <article className="">
           <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
