@@ -2,6 +2,7 @@ import React from 'react';
 import SelectLocation from './SelectLocation';
 import SocialMediasBar from './SocialMediasBar';
 import PageNavigate from './PageNavigate';
+import SearchBar from './SearchBar';
 import { indexInternalRedirect } from '../constant/pageRedirect';
 import { socialMediaList } from '../constant/socialMedia';
 import { locationsList } from '../constant/locations';
@@ -22,7 +23,7 @@ function Header() {
         <a href="/">
           <Image src={Logo} className='header__logo' alt="MaxiPet logo" />
         </a>
-        <div>b</div>
+        <SearchBar />
         <div>c</div>
       </div>
       <div className='pageNavigate__container'>

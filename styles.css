@@ -115,6 +115,7 @@ body {
   --height-normal: 24px;
   --txt-color-link: #25BF47;
   --txt-color-primary: #333333;
+  --color-disabled: #C8C2BE;
 }
 
 body, body * {
