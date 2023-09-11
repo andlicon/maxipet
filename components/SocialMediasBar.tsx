@@ -1,11 +1,10 @@
 import React from 'react';
-import { socialMediaList } from '../constant/socialMedia';
 
-function SocialMediasBar() {
+function SocialMediasBar({socialMedias}) {
   return (
     <div className='socialMedias mx-2'>
       {
-        socialMediaList.map((sm, index) => {
+        socialMedias.map((sm, index) => {
           return (
             <a href={sm.to} target='_blank' key={index} className='social-media mx-2'>
               <i className={sm.bootstrapClass}></i>
