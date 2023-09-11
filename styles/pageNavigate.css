@@ -1,0 +1,13 @@
+.pageNavigate__container {
+  background-color: var(--bg-light-secondary);
+}
+
+.pageNavigate ul {
+  height: 30px;
+}
+
+.pageNavigate a {
+  color: var(--txt-color-primary);
+  font-weight: var(--weight-regular);
+  text-decoration: none;
+}

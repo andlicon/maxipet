@@ -1,26 +1,25 @@
 import React from 'react';
 import SelectLocation from './SelectLocation';
+import SocialMediasBar from './SocialMediasBar';
+import PageNavigate from './PageNavigate';
+import { indexInternalRedirect } from '../constant/pageRedirect';
 import { socialMediaList } from '../constant/socialMedia';
+import { locationsList } from '../constant/locations';
 
 function Header() {
 
   return (
-    <div className='header'>
-      <div className="container mx-auto p-2 flex flex-row justify-end gap-x-4">
-        <SelectLocation />
-        <div className='socialMedias mx-2'>
-          {
-            socialMediaList.map((sm, index) => {
-              return (
-                <a href={sm.to} target='_blank' key={index} className='social-media mx-2'>
-                  <i className={sm.bootstrapClass}></i>
-                </a>
-              )
-            })
-          }
+    <>
+      <div className='header'>
+        <div className="container mx-auto py-2 flex flex-row justify-end gap-x-4">
+          <SelectLocation locations={locationsList} />
+          <SocialMediasBar socialMedias={socialMediaList} />
         </div>
       </div>
-    </div>
+      <div className='pageNavigate__container'>
+        <PageNavigate items={indexInternalRedirect} />
+      </div>
+    </>
   )
 }
 export default Header;

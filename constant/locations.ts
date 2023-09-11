@@ -1,4 +1,9 @@
-export const locationsList = [
+export interface Location {
+    id: number,
+    label: string
+}
+
+export const locationsList:Location[] = [
     {
         id: 1,
         label: 'Bello Monte'

@@ -6,6 +6,7 @@ import { AppProps } from 'next/app';
 import '../styles.css';
 import '../styles/header.css';
 import '../styles/selectLocation.css';
+import '../styles/pageNavigate.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {

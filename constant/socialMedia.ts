@@ -1,4 +1,10 @@
-export const socialMediaList = [
+export interface SocialMedia {
+  label: string,
+  bootstrapClass: string,
+  to: string
+}
+
+export const socialMediaList:SocialMedia[] = [
   {
     label: 'instagram',
     bootstrapClass: 'bi bi-instagram',

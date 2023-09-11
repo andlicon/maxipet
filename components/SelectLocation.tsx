@@ -1,14 +1,14 @@
 import React from 'react';
-import { locationsList } from '../constant/locations';
+import { Location } from '../constant/locations';
 
-function SelectLocation() {
+function SelectLocation({locations}) {
   return (
     <div className='selectLocation flex'>
       <i className="bi bi-geo-alt me-px"></i>
       <div className='select relative'>
         <select name="location" className='rounded' id="location">
           {
-            locationsList.map((location) => {
+            locations.map((location:Location) => {
               return (
                 <option value={location.id} key={location.id}>
                   {location.label}
