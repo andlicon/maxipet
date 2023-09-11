@@ -1,11 +1,11 @@
 import React from 'react';
-import { SocialMedia } from '../constant/socialMedia'
+import { PageRedirect } from '../constant/pageRedirect'
 
-function SocialMediasBar({socialMedias}) {
+function IconGroup({iconGroup}) {
   return (
-    <div className='socialMedias ms-2'>
+    <div className='iconGroup ms-2'>
       {
-        socialMedias.map((sm:SocialMedia, index:number) => {
+        iconGroup.map((sm:PageRedirect, index:number) => {
           return (
             <a href={sm.to} target='_blank' key={index} className='social-media mx-2'>
               <i className={sm.bootstrapClass}></i>
@@ -16,4 +16,4 @@ function SocialMediasBar({socialMedias}) {
     </div>
   )
 }
-export default SocialMediasBar;
+export default IconGroup;

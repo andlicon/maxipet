@@ -1,10 +1,13 @@
 import React from 'react';
 import SelectLocation from './SelectLocation';
-import SocialMediasBar from './SocialMediasBar';
+import IconGroup from './IconGroup';
 import PageNavigate from './PageNavigate';
 import SearchBar from './SearchBar';
-import { indexInternalRedirect } from '../constant/pageRedirect';
-import { socialMediaList } from '../constant/socialMedia';
+import {
+  internalRedirect,
+  actionsRedirect,
+  socialMediaRedirect
+} from '../constant/pageRedirect';
 import { locationsList } from '../constant/locations';
 import Image from 'next/image';
 import Logo from '../images/logo-maxipet-white-bg.png';
@@ -16,7 +19,7 @@ function Header() {
       <div className='flex flex-row items-center'>
         <div className="container mx-auto flex flex-row justify-end items-center gap-x-4">
           <SelectLocation locations={locationsList} />
-          <SocialMediasBar socialMedias={socialMediaList} />
+          <IconGroup iconGroup={socialMediaRedirect} />
         </div>
       </div>
       <div className='container mx-auto flex justify-between items-center'>
@@ -24,10 +27,12 @@ function Header() {
           <Image src={Logo} className='header__logo' alt="MaxiPet logo" />
         </a>
         <SearchBar />
-        <div>c</div>
+        <div className='actions'>
+          <IconGroup iconGroup={actionsRedirect} />
+        </div>
       </div>
       <div className='pageNavigate__container'>
-        <PageNavigate items={indexInternalRedirect} />
+        <PageNavigate items={internalRedirect} />
       </div>
     </div>
   )
