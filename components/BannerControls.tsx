@@ -1,5 +1,6 @@
 import Raect from 'react';
 import { useBanner } from '../hooks/useBanner';
+import DisplayChanger from './DisplayChanger';
 
 const BannerControls = ({
   images,
@@ -13,13 +14,11 @@ const BannerControls = ({
   } = useBanner({ images });
 
   return (
-    <div className='banner__controls'>
+    <div className='banner__controls flex gap-2'>
       {
         images.map((element, index) => {
           return (
-            <button key={index}>
-              clcik
-            </button>
+            <DisplayChanger key={index} current={false} />
           )
         })
       }

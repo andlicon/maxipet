@@ -13,4 +13,8 @@ export const bannerImages = [
     url: banner,
     alt: 'Un perro sacando la lengua'
   },
+  {
+    url: banner,
+    alt: 'Un perro sacando la lengua'
+  }
 ]
