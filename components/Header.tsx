@@ -12,7 +12,7 @@ function Header() {
   return (
     <>
       <div className='header'>
-        <div className="container mx-auto p-2 flex flex-row justify-end gap-x-4">
+        <div className="container mx-auto py-2 flex flex-row justify-end gap-x-4">
           <SelectLocation locations={locationsList} />
           <SocialMediasBar socialMedias={socialMediaList}/>
         </div>

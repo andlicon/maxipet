@@ -1,4 +1,5 @@
 import React from 'react';
+import { Location } from '../constant/locations';
 
 function SelectLocation({locations}) {
   return (
@@ -7,7 +8,7 @@ function SelectLocation({locations}) {
       <div className='select relative'>
         <select name="location" className='rounded' id="location">
           {
-            locations.map((location) => {
+            locations.map((location:Location) => {
               return (
                 <option value={location.id} key={location.id}>
                   {location.label}
