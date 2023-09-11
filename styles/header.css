@@ -1,8 +1,25 @@
-.header {
-    background-color: var(--bg-primary);
+.header>:nth-child(1) {
+  background-color: var(--bg-primary);
+  height: 26px;
 }
 
-.header *,
-.header a {
-    color: white;
+.header>:nth-child(1)>* {
+  max-height: 16px;
+}
+
+.header>:nth-child(1) * {
+  color: white;
+}
+
+.header>:nth-child(2) {
+  height: 60px;
+}
+
+.header>:nth-child(3) {
+  height: 30px;
+}
+
+.header__logo {
+  height: 46px;
+  width: 169.46px;
 }
