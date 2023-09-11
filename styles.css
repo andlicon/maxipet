@@ -96,6 +96,7 @@ body {
 /* constants */
 :root {
   --bg-primary: #E2081E;
+  --bg-active: #E7283C;
   --bg-light-secondary: #F8F5F3;
   --weight-medium: 400;
   --family-mulish: 'Mulish', sans-serif;
@@ -197,9 +198,5 @@ a {
 }
 
 .display-changer.current {
-  background-color: #E2081E;
-}
-
-.banner__controls {
-  
+  background-color: var(--bg-active);
 }

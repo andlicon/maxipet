@@ -14,7 +14,8 @@ const BannerDisplay = ({ images }) => {
       <Banner image={current} />
       <BannerControls
         images={images}
-        imageHandler={currentImageHandler} />
+        imageHandler={currentImageHandler}
+        currentId={current.id} />
     </div>
   )
 }

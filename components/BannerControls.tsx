@@ -4,6 +4,7 @@ import DisplayChanger from './DisplayChanger';
 
 const BannerControls = ({
   images,
+  currentId,
   imageHandler }) => {
 
   const {
@@ -18,7 +19,7 @@ const BannerControls = ({
       {
         images.map((element, index) => {
           return (
-            <DisplayChanger key={index} current={false} />
+            <DisplayChanger key={index} current={element.id == currentId} />
           )
         })
       }
