@@ -1,11 +1,14 @@
 import { useState } from 'react';
 
-const useBanner = () => {
-  const hi = 'hi';
+export const useBanner = ({ images }) => {
+  const [currentImage, setCurrentImage] = useState(images[0]);
 
-  return({
-      hi
-    }
-  )
-}
-export default useBanner;
+  const next = ''
+  const prev = ''
+
+  return ({
+    currentImage,
+    next,
+    prev
+  });
+};

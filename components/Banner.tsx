@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = ({ image }) => {
   return (
     <div className='banner'>
-      Este es el banner
+      <img src={image.url.src} alt={image.alt} />
     </div>
   )
 }

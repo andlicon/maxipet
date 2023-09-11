@@ -1,14 +1,13 @@
 import React from 'react';
-// import Image from 'next/image';
-// import logo from '../public/logo.png';
 import Header from '../components/NavBar';
-import Banner from '../components/Banner';
+import BannerDisplay from '../components/BannerDisplay';
+import { bannerImages } from '../constant/images';
 
 function HomePage() {
   return (
     <>
       <Header />
-      <Banner />
+      <BannerDisplay images={bannerImages} />
     </>
   );
 }
