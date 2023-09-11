@@ -6,7 +6,7 @@ export interface PageRedirect {
 
 export const internalRedirect: PageRedirect[] = [
   {
-    label: 'inicio',
+    label: 'Inicio',
     to: '#inicio',
     bootstrapClass: null
   },
@@ -60,7 +60,7 @@ export const actionsRedirect: PageRedirect[] = [
   },
 ]
 
-export const socialMediaRedirect:PageRedirect[] = [
+export const socialMediaRedirect: PageRedirect[] = [
   {
     label: 'Instagram',
     bootstrapClass: 'bi bi-instagram',
