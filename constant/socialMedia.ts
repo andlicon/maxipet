@@ -6,17 +6,17 @@ export interface SocialMedia {
 
 export const socialMediaList:SocialMedia[] = [
   {
-    label: 'instagram',
+    label: 'Instagram',
     bootstrapClass: 'bi bi-instagram',
     to: 'https://www.instagram.com'
   },
   {
-    label: 'twitter',
+    label: 'Twitter',
     bootstrapClass: 'bi bi-twitter',
     to: 'https://www.instagram.com'
   },
   {
-    label: 'facebook',
+    label: 'Facebook',
     bootstrapClass: 'bi bi-facebook',
     to: 'https://www.facebook.com'
   }
