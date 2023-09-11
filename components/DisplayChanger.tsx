@@ -1,9 +1,10 @@
 import React from 'react';
 
-const DisplayChanger = ({ current }) => {
+const DisplayChanger = ({ current, changeImage }) => {
   return (
     <button
-      className={`display-changer rounded ${current ? 'current' : ''}`}>
+      className={`display-changer rounded ${current ? 'current' : ''}`}
+      onClick={changeImage}>
 
     </button>
   );
