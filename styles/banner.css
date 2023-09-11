@@ -1,0 +1,22 @@
+:root {
+  --banner-height: 580px;
+}
+
+.banner__display {
+  height: var(--banner-height);
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_img{
+  height: var(--banner-height);
+  max-width: 1440px;
+}
+
+.banner__controls {
+  position: absolute;
+  bottom: 1.4em;
+}
