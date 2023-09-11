@@ -2,7 +2,7 @@
     background-color: var(--bg-primary);
 }
 
-.hdeaer *,
+.header *,
 .header a {
     color: white;
 }

@@ -115,7 +115,7 @@ body {
   --txt-color-link: #25BF47;
 }
 
-body {
+body, body * {
   font-family: var(--family-mulish);
   font-weight: var(--weight-regular);
   font-size: var(--size-normal);

@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <div className='header'>
-      <div className="container mx-auto p-1 flex flex-row justify-end">
+      <div className="container mx-auto p-2 flex flex-row justify-end gap-x-4">
         <SelectLocation />
         <div className='socialMedias mx-2'>
           {

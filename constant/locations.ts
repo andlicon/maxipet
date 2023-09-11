@@ -5,6 +5,10 @@ export const locationsList = [
     },
     {
         id: 2,
+        label: 'La trinidad'
+    },
+    {
+        id: 3,
         label: 'Anzoátegui'
-    }
+    },
 ]
