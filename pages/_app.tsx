@@ -4,6 +4,8 @@ import Router from 'next/router';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles.css';
+import '../styles/header.css';
+import '../styles/selectLocation.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -23,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Plantilla Next.js | Avila Tek</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></link>
       </Head>
       <Component {...pageProps} />
     </>

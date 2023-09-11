@@ -1,0 +1,19 @@
+.selectLocation select {
+  background-color: inherit;
+  border: none;
+  padding: 0 .4rem;
+  background-image: none;
+  padding-right: 1em;
+}
+
+
+
+.selectLocation option {
+  background-color: var(--bg-primary);
+}
+
+.select__icon {
+  position: absolute;
+  right: 0;
+  font-size: var(--size-small);
+}
