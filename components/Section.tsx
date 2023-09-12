@@ -6,18 +6,26 @@ const Section = ({ children, title, subTitle, image }) => {
       <div>
         <span className='section__subtitle'>{subTitle}</span>
         <h2 className='section__title'>{title.toUpperCase()}</h2>
-        <div className='section__content flex mt-6'>
-          {
-            image != null
-              ? <img src={image.image} className={image.side ? 'order-1 ms-5' : 'me-5'} alt="" />
-              : null
-          }
-          <div className='flex justify-between w-full flex-wrap'>
-            {
-              children
-            }
-          </div>
-        </div>
+        {
+          image == null
+            ?
+            <div className='section__content flex flex-row mt-6'>
+              <div className={`w-full flex flex-wrap items-center justify-center lg:justify-between`}>
+                {
+                  children
+                }
+              </div>
+            </div>
+            :
+            <div className='section__content flex flex-col lg:flex-row mt-6'>
+              <img src={image.image} className={`md:w-full md:ms-5 ${image.side ? 'md:order-1' : ''}`} alt="" />
+              <div className='w-full flex flex-wrap justify-center lg:grid lg:grid-cols-3 lg:grid-rows-2'>
+                {
+                  children
+                }
+              </div>
+            </div>
+        }
       </div>
     </div>
   );
