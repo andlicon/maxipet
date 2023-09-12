@@ -1,10 +1,10 @@
 import React from 'react';
-import Section from '../components/Section';
-import Service from '../components/Service';
+import Section from './Section';
+import Service from './Service';
 import { serviceList } from '../constant/services';
 import { serviceAdditional } from '../constant/images';
 
-const AllServices = () => {
+const SectionServices = () => {
   return (
     <Section
       title='Nuestros servicios'
@@ -24,4 +24,4 @@ const AllServices = () => {
     </Section>
   )
 }
-export default AllServices;
+export default SectionServices;
