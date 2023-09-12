@@ -3,11 +3,10 @@ import Image from 'next/image'
 import Header from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import Section from '../components/Section';
-import Category from '../components/Category';
 import ProductCard from '../components/ProductCard';
 import AllServices from '../components/AllServices';
 import Brand from '../components/Brand'
-import { categoryList } from '../constant/categories';
+import SectionCategory from '../components/SectionCategory';
 import {
   popularList,
   featuredList,
@@ -32,20 +31,22 @@ function HomePage() {
       <Header />
       <BannerDisplay images={bannerImages} />
       <div className="container page__content mx-auto">
-        {/* all categories */}
-        <Section
-          title='Una gran variedad de categorías'
-          subTitle='Lorem ipsum dolor sit amet.'
-          additional={null}
-          childrenDisplay='flex'>
-          {
-            categoryList.map((category) => {
-              return (
-                <Category category={category} key={category.id} />
-              )
-            })
-          }
-        </Section>
+        <SectionCategory />
+        {/* <div className="container page__content mx-auto">
+        {/* all categories
+      <Section
+        title='Una gran variedad de categorías'
+        subTitle='Lorem ipsum dolor sit amet.'
+        additional={null}
+        childrenDisplay='flex'>
+        {
+          categoryList.map((category) => {
+            return (
+              <Category category={category} key={category.id} />
+            )
+          })
+        }
+      </Section> */}
 
         {/* featured products */}
         <Section
@@ -120,7 +121,7 @@ function HomePage() {
             })
           }
         </Section>
-      </div>
+      </div >
     </>
   );
 }
