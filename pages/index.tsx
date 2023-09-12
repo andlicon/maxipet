@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import Header from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import Section from '../components/Section';
@@ -15,6 +16,9 @@ import {
   featuredAd,
   newAd
 } from '../constant/images';
+import ad1 from '../images/ad1.png';
+import ad2 from '../images/ad2.png';
+import ad3 from '../images/ad3.png';
 
 function HomePage() {
   return (
@@ -50,6 +54,12 @@ function HomePage() {
           }
         </Section>
 
+        {/* add */}
+        <div className='flex ad'>
+          <Image src={ad2} alt="A dog eating its dog food" />
+          <Image src={ad1} alt="A shovel with dog food" />
+        </div>
+
         {/* popular ones */}
         <Section
           title='Productos populares'
@@ -63,6 +73,11 @@ function HomePage() {
             })
           }
         </Section>
+
+        {/* add */}
+        <div className='ad'>
+          <Image src={ad3} alt="A happy dog lay down over the grass, playing with its toy" />
+        </div>
 
         {/* News products */}
         <Section

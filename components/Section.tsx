@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section = ({ children, title, subTitle, image }) => {
   return (
-    <div className='container section mt-10'>
+    <div className='container section'>
       <div>
         <span className='section__subtitle'>{subTitle}</span>
         <h2 className='section__title'>{title.toUpperCase()}</h2>

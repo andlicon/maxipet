@@ -254,3 +254,6 @@ a {
   height: 10px;
 }
 
+.page__content>* {
+  margin-top: 3em;
+}
