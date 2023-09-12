@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 const Banner = ({ image }) => {
   return (
-    <div className="banner">
+    <div className='banner'>
       <img
         src={image.url.src}
         alt={image.alt}
-        className="banner_img mx-auto" />
+        className='banner_img mx-auto' />
     </div>
   )
 }

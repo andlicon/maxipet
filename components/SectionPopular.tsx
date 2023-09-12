@@ -1,16 +1,16 @@
-import React from "react";
-import ProductCard from "../components/ProductCard";
-import Section from "./Section";
-import { popularList } from "../constant/products";
+import React from 'react';
+import ProductCard from '../components/ProductCard';
+import Section from './Section';
+import { popularList } from '../constant/products';
 
 const SectionPopular = () => {
   return (
     <Section
-      title="Productos populares"
-      subTitle="Lorem ipsum dolor sit amet."
+      title='Productos populares'
+      subTitle='Lorem ipsum dolor sit amet.'
       additional={null}
-      childrenDisplay="flex"
-      id="popular">
+      childrenDisplay='flex'
+      id='popular'>
       {
         popularList.map((product) => {
           return (

@@ -1,12 +1,12 @@
-import React from "react";
-import avilaTekLogo from "../images/AvilaTekLogo.svg";
+import React from 'react';
+import avilaTekLogo from '../images/AvilaTekLogo.svg';
 
 const Footer = () => {
   return (
     <>
-      <div className="footer">
-        <div className="container grid grid-cols-4 mx-auto">
-          <div id="nosotros">
+      <div className='footer'>
+        <div className='container grid grid-cols-4 mx-auto'>
+          <div id='nosotros'>
             <h2>Sobre nosotros</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque soluta eius aspernatur sunt in, magnam aperiam dicta tenetur necessitatibus labore sequi itaque doloremque natus amet laboriosam nam, error consectetur alias.
@@ -43,11 +43,11 @@ const Footer = () => {
         <div>
         </div>
       </div>
-      <div className="footer__avilatek">
-        <div className="container mx-auto">
-          <small className="flex">
+      <div className='footer__avilatek'>
+        <div className='container mx-auto'>
+          <small className='flex'>
             Copyright © 2021 Maxi Pet. Todos los Derechos Reservados. Desarrollado por Avila Tek
-            <img src={avilaTekLogo.src} alt="" />
+            <img src={avilaTekLogo.src} alt='' />
           </small>
         </div>
       </div>

@@ -6,14 +6,14 @@ export interface Location {
 export const locationsList: Location[] = [
   {
     id: 1,
-    label: "Bello Monte"
+    label: 'Bello Monte'
   },
   {
     id: 2,
-    label: "La trinidad"
+    label: 'La trinidad'
   },
   {
     id: 3,
-    label: "Anzoátegui"
+    label: 'Anzoátegui'
   },
 ]

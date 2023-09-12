@@ -1,5 +1,5 @@
-import Raact from "react";
-import { useSearch } from "../hooks/useSearch";
+import Raact from 'react';
+import { useSearch } from '../hooks/useSearch';
 
 const SearchBar = () => {
   const {
@@ -8,9 +8,9 @@ const SearchBar = () => {
     isEmpty } = useSearch();
 
   return (
-    <div className="searchBar">
-      <input type="text" placeholder="Buscador" value={search} onChange={handleSearch} className="searchBar__input rounded" />
-      <i className={`bi bi-search searchBar__icon ${isEmpty ? "show" : "hide"}`}></i>
+    <div className='searchBar'>
+      <input type='text' placeholder='Buscador' value={search} onChange={handleSearch} className='searchBar__input rounded' />
+      <i className={`bi bi-search searchBar__icon ${isEmpty ? 'show' : 'hide'}`}></i>
     </div>
   )
 }

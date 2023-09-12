@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import Document, {
   Html,
   Head,
   Main,
   NextScript,
   DocumentContext,
-} from "next/document";
+} from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -15,18 +15,18 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="es">
+      <Html lang='es'>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
-            rel="preload"
-            as="style"
+            href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap'
+            rel='preload'
+            as='style'
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
-            rel="stylesheet"
+            href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap'
+            rel='stylesheet'
           />
-          {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" /> */}
+          {/* <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css' /> */}
         </Head>
         <body>
           <Main />
