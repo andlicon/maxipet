@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import Header from '../components/NavBar';
+import NavBar from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import SectionCategory from '../components/SectionCategory';
 import SectionFeatured from '../components/SectionFeatured';
@@ -8,6 +8,7 @@ import SectionPopular from '../components/SectionPopular';
 import SectionNews from '../components/SectionNews';
 import SectionServices from '../components/SectionServices';
 import SectionBrand from '../components/SectionBrand';
+import Footer from '../components/Footer';
 import { bannerImages } from '../constant/images';
 import ad1 from '../images/ad1.png';
 import ad2 from '../images/ad2.png';
@@ -16,7 +17,7 @@ import ad3 from '../images/ad3.png';
 function HomePage() {
   return (
     <>
-      <Header />
+      <NavBar />
       <BannerDisplay images={bannerImages} />
       <div className="container page__content mx-auto">
         <SectionCategory />
@@ -35,6 +36,7 @@ function HomePage() {
         <SectionServices />
         <SectionBrand />
       </div >
+      <Footer />
     </>
   );
 }

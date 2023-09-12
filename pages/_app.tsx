@@ -14,6 +14,7 @@ import '../styles/category.css';
 import '../styles/productCard.css';
 import '../styles/service.css';
 import '../styles/brand.css';
+import '../styles/Footer.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -33,7 +34,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Plantilla Next.js | Avila Tek</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></link>
       </Head>
       <Component {...pageProps} />
     </>

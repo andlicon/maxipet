@@ -10,7 +10,8 @@ const SectionFeatured = () => {
       title='Productos destacados'
       subTitle='Lorem ipsum dolor sit amet.'
       additional={featuredAd}
-      childrenDisplay='grid'>
+      childrenDisplay='grid'
+      id='promociones'>
       {
         featuredList.map((product) => {
           return (

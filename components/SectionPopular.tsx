@@ -9,7 +9,8 @@ const SectionPopular = () => {
       title='Productos populares'
       subTitle='Lorem ipsum dolor sit amet.'
       additional={null}
-      childrenDisplay='flex'>
+      childrenDisplay='flex'
+      id='popular'>
       {
         popularList.map((product) => {
           return (
