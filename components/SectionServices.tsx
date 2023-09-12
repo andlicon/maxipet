@@ -15,7 +15,7 @@ const SectionServices = () => (
     {serviceList.map((service) => (
       <Service
         service={service}
-        button={{ label: '', icon: '' }}
+        // button={{ label: '', icon: '' }}
         key={service.id}
       />
     ))}
