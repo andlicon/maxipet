@@ -1,4 +1,35 @@
 .footer {
   background-color: var(--bg-light-secondary);
   height: 340px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer * {
+  color: #867d77;
+}
+
+.footer .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+}
+
+.footer .container>* {
+  flex: 1 1 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.footer h2 {
+  color: var(--color-highly-primary);
+}
+
+.footer h2+* {
+  margin-top: 1em;
 }
