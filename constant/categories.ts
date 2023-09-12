@@ -1,33 +1,40 @@
-import categoryIcon from '../images/dogIcon.png';
+import categoryIcon from '../images/dogIcon.svg';
 
 export interface Category {
   img: string,
-  label: string
+  label: string,
+  id: number
 }
 
 export const categoryList: Category[] = [
   {
     img: categoryIcon.src,
-    label: 'Perros'
+    label: 'Perros',
+    id: 1
   },
   {
     img: categoryIcon.src,
-    label: 'Gatos'
+    label: 'Gatos',
+    id: 2
   },
   {
     img: categoryIcon.src,
-    label: 'Peces'
+    label: 'Peces',
+    id: 3
   },
   {
     img: categoryIcon.src,
-    label: 'Roedores'
+    label: 'Roedores',
+    id: 4
   },
   {
     img: categoryIcon.src,
-    label: 'Reptiles'
+    label: 'Reptiles',
+    id: 5
   },
   {
     img: categoryIcon.src,
-    label: 'Placeholder'
+    label: 'Placeholder',
+    id: 6
   }
 ]

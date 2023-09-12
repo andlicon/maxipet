@@ -2,7 +2,9 @@ import React from 'react';
 import Header from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import Section from '../components/Section';
+import Category from '../components/Category'
 import { bannerImages } from '../constant/images';
+import { categoryList } from '../constant/categories';
 
 function HomePage() {
   return (
@@ -13,7 +15,13 @@ function HomePage() {
         <Section
           title='Una gran variedad de categorías'
           subTitle='Lorem ipsum dolor sit amet.'>
-
+          {
+            categoryList.map((category) => {
+              return (
+                <Category category={category} key={category.id} />
+              )
+            })
+          }
         </Section>
       </div>
     </>
