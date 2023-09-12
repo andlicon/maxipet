@@ -21,3 +21,14 @@
   line-height: 19.5px;
   font-weight: var(--weight-semi-bold);
 }
+
+.section__img {
+  height: 708px;
+}
+
+@media (min-width: 1024px) {
+  .section__img {
+    max-width: 440px;
+    height: 708px;
+  }
+}

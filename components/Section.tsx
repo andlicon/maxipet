@@ -10,7 +10,7 @@ const Section = ({ children, title, subTitle, image }) => {
           image == null
             ?
             <div className='section__content flex flex-row mt-6'>
-              <div className={`w-full flex flex-wrap items-center justify-center lg:justify-between`}>
+              <div className={`w-full flex flex-wrap items-start justify-start lg:justify-between gap-y-4`}>
                 {
                   children
                 }
@@ -18,8 +18,8 @@ const Section = ({ children, title, subTitle, image }) => {
             </div>
             :
             <div className='section__content flex flex-col lg:flex-row mt-6'>
-              <img src={image.image} className={`md:w-full md:ms-5 ${image.side ? 'md:order-1' : ''}`} alt="" />
-              <div className='w-full flex flex-wrap justify-center lg:grid lg:grid-cols-3 lg:grid-rows-2'>
+              <img src={image.image} className={`md:w-full section__img ${image.side ? 'lg:order-1 lg:ms-5' : 'lg:me-5'}`} alt="" />
+              <div className='w-full flex flex-wrap justify-start mt-5  lg:mt-0 lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-y-4'>
                 {
                   children
                 }

@@ -4,7 +4,7 @@ import Button from './Button';
 const rateArray = [1, 2, 3, 4, 5];
 const ProductCard = ({ product }) => {
   return (
-    <div className='productCard'>
+    <div className='productCard sm:mx-auto'>
       <div>
         <img src={product.image} alt="" className='productCard__img' />
       </div>
