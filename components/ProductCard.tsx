@@ -1,7 +1,7 @@
 import React from 'react';
+import Button from './Button';
 
 const rateArray = [1, 2, 3, 4, 5];
-
 const ProductCard = ({ product }) => {
   return (
     <div className='productCard'>
@@ -21,6 +21,9 @@ const ProductCard = ({ product }) => {
           })
         }
         <p className='productCard__price'>{product.price}</p>
+      </div>
+      <div className='flex justify-center'>
+        <Button label='Agregar' bootstrapIcon='bi bi-cart4' />
       </div>
     </div>
   );
