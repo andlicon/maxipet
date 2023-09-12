@@ -1,5 +1,10 @@
 import banner from '../images/banner.png';
 import featureAd from '../images/featuredProductAd.png';
+import {
+  TO_TOP,
+  TO_LEFT,
+  TO_RIGHT
+} from '../constant/components';
 
 export const bannerImages = [
   {
@@ -26,10 +31,10 @@ export const bannerImages = [
 
 export const featuredAd = {
   image: featureAd.src,
-  side: false
+  placement: TO_LEFT
 }
 
 export const newAd = {
   image: featureAd.src,
-  side: true
+  placement: TO_RIGHT
 }
