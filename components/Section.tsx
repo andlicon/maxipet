@@ -24,7 +24,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
       element = getAdditionalElement('md:w-full section__img lg:me-5');
     }
     else if (additional.placement == TO_RIGHT) {
-      element = getAdditionalElement('md:w-full section__img lg:order-1 lg:ms-5');
+      element = getAdditionalElement('md: w-full section__img md:order-1 lg:ms-5');
     }
 
     return element;
@@ -35,7 +35,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
       <div>
         <span className='section__subtitle'>{subTitle}</span>
         <h2 className='section__title'>{title.toUpperCase()}</h2>
-        <div className={`flex sm:flex-col md:flex-row${additional?.placement == TO_TOP ? ' flex-wrap' : ''}`}>
+        <div className={`flex flex-col md:flex-row${additional?.placement == TO_TOP ? ' flex-wrap' : ''}`}>
           {
             additional
               ? displayAdditional()
@@ -50,7 +50,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
                 }
               </div>
               :
-              <div className='w-full flex flex-wrap justify-start mt-5  lg:mt-0 lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-y-4'>
+              <div className='w-full flex flex-wrap justify-start mt-5 lg:mt-0 lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-y-4'>
                 {
                   children
                 }
