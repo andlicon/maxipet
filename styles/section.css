@@ -1,0 +1,34 @@
+.section__title {
+  color: var(--color-highly-primary);
+}
+
+.section__subtitle {
+  font-family: Calibri;
+  line-height: 18.09px;
+  font-size: var(--size-small);
+  font-weight: var(--weight-regular);
+  color: var(--color-disabled);
+}
+
+.category img {
+  width: 120px;
+}
+
+.category span {
+  font-family: var(--family-montserrat);
+  font-size: var(--size-normal);
+  text-align: center;
+  line-height: 19.5px;
+  font-weight: var(--weight-semi-bold);
+}
+
+.section__img {
+  height: 708px;
+}
+
+@media (min-width: 1024px) {
+  .section__img {
+    max-width: 440px;
+    height: 708px;
+  }
+}
