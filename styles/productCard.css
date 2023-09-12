@@ -1,0 +1,31 @@
+.productCard {
+  width: fit-content;
+  max-height: 334px;
+}
+
+.productCard__img {
+  height: 200px;
+  margin: 0 auto;
+}
+
+.productCard__price {
+  font-weight: var(--weight-regular);
+}
+
+.productCard__price::before {
+  content: '$';
+}
+
+.productCard * {
+  font-family: var(--family-montserrat);
+  font-size: var(--size-small);
+  font-weight: var(--weight-regular);
+}
+
+.productCard__name {
+  font-weight: var(--weight-medium);
+}
+
+.productCard .button {
+  margin-top: .5em;
+}

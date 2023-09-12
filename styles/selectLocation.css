@@ -1,0 +1,36 @@
+.selectLocation {
+  height: 100%;
+}
+
+.selectLocation select {
+  background-color: inherit;
+  position: relative;
+  border: none;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-left: .4em;
+}
+
+.selectLocation option {
+  background-color: var(--color-disabled);
+}
+
+.select__icon {
+  /* position: absolute; */
+  right: 0;
+  font-size: var(--size-small);
+  pointer-events: none;
+  margin-left: .4em;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location * {
+  margin-right: 1em;
+}

@@ -1,0 +1,10 @@
+.service {
+  width: fit-content;
+}
+
+.service p {
+  font-family: 'calibri';
+  font-size: var(--size-small);
+  font-weight: var(--weight-regular);
+  max-width: 300px;
+}
