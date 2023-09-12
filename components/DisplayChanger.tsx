@@ -6,7 +6,7 @@ const DisplayChanger = ({ current, changeImage }) => (
     className={`display-changer rounded ${current ? 'current' : ''}`}
     onClick={changeImage}
   >
-    .
+
   </button>
 );
 export default DisplayChanger;
