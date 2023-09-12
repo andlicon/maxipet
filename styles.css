@@ -117,6 +117,7 @@ body {
   --size-subtitle: 20px;
   --size-normal: 16px;
   --size-small: 14px;
+  --size-very-small: 12px;
   --height-normal: 24px;
   --txt-color-link: #25BF47;
   --txt-color-primary: #333333;
@@ -235,3 +236,21 @@ a {
 .rate.checked {
   background-image: url('./images/dogPawFilled.svg');
 }
+
+.button {
+  background-color: var(--bg-primary);
+  color: white;
+  font-size: var(--size-very-small);
+  font-family: var(--family-montserrat);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  min-width: 110px;
+  height: 24px;
+}
+
+.button i {
+  color: white;
+  width: 11px;
+  height: 10px;
+}
+
