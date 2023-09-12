@@ -1,0 +1,16 @@
+.brand {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand img {
+  width: 90px;
+}
+
+.brand.has-bg {
+  background-color: white;
+}

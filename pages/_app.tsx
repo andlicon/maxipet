@@ -13,6 +13,7 @@ import '../styles/section.css';
 import '../styles/category.css';
 import '../styles/productCard.css';
 import '../styles/service.css';
+import '../styles/brand.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {

@@ -9,7 +9,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
 
   const getAdditionalElement = (classes: string) => {
     if (additional.contentType == 'image') {
-      return <img src={additional.content} className={classes} alt="" />;
+      return <img src={additional.content} className={`section__img self-start ${classes}`} alt="" />;
     }
     return <p className={classes}>{additional.content}</p>
   }
@@ -21,10 +21,10 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
       element = getAdditionalElement('w-full my-5');
     }
     else if (additional.placement == TO_LEFT) {
-      element = getAdditionalElement('md:w-full section__img lg:me-5');
+      element = getAdditionalElement('md:w-full lg:me-5');
     }
     else if (additional.placement == TO_RIGHT) {
-      element = getAdditionalElement('md: w-full section__img md:order-1 lg:ms-5');
+      element = getAdditionalElement('md: w-full md:order-1 lg:ms-5');
     }
 
     return element;
@@ -35,7 +35,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
       <div>
         <span className='section__subtitle'>{subTitle}</span>
         <h2 className='section__title'>{title.toUpperCase()}</h2>
-        <div className={`flex flex-col md:flex-row${additional?.placement == TO_TOP ? ' flex-wrap' : ''}`}>
+        <div className={`flex flex-col items-center md:flex-row${additional?.placement == TO_TOP ? ' flex-wrap' : ''}`}>
           {
             additional
               ? displayAdditional()
