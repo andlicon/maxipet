@@ -33,3 +33,25 @@
 .footer h2+* {
   margin-top: 1em;
 }
+
+.footer__avilatek {
+  height: 36px;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__avilatek * {
+  color: white;
+}
+
+.footer__avilatek>.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__avilatek img {
+  margin-left: .4em;
+}
