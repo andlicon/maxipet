@@ -55,9 +55,9 @@ function HomePage() {
         </Section>
 
         {/* add */}
-        <div className='flex ad'>
-          <Image src={ad2} alt="A dog eating its dog food" />
-          <Image src={ad1} alt="A shovel with dog food" />
+        <div className='flex ad w-full'>
+          <Image src={ad2} alt="A dog eating its dog food" className='w-1/2' />
+          <Image src={ad1} alt="A shovel with dog food" className='w-1/2' />
         </div>
 
         {/* popular ones */}
@@ -75,8 +75,8 @@ function HomePage() {
         </Section>
 
         {/* add */}
-        <div className='ad'>
-          <Image src={ad3} alt="A happy dog lay down over the grass, playing with its toy" />
+        <div className='ad w-full'>
+          <Image src={ad3} alt="A happy dog lay down over the grass, playing with its toy" className='w-full' />
         </div>
 
         {/* News products */}
