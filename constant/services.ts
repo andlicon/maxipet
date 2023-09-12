@@ -23,13 +23,25 @@ export const serviceList: Service[] = [
   {
     id: 3,
     image: serviceImage.src,
-    label: 'Entrenamiento',
+    label: 'Veterinario',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus Molestie rhoncus id nunc, porta leo tempus facillsi'
   },
   {
     id: 4,
     image: serviceImage.src,
+    label: 'Entrenamiento',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus Molestie rhoncus id nunc, porta leo tempus facillsi'
+  },
+  {
+    id: 5,
+    image: serviceImage.src,
     label: 'Psicología canina',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus Molestie rhoncus id nunc, porta leo tempus facillsi'
-  }
+  },
+  {
+    id: 6,
+    image: serviceImage.src,
+    label: 'Fiesta de cumpleaños',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus Molestie rhoncus id nunc, porta leo tempus facillsi'
+  },
 ]
