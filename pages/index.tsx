@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Header from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import Section from '../components/Section';
-import Category from '../components/Category'
-import ProductCard from '../components/ProductCard'
+import Category from '../components/Category';
+import ProductCard from '../components/ProductCard';
+import AllServices from '../components/AllServices';
 import { categoryList } from '../constant/categories';
 import {
   popularList,
@@ -30,7 +31,8 @@ function HomePage() {
         <Section
           title='Una gran variedad de categorías'
           subTitle='Lorem ipsum dolor sit amet.'
-          image={null}>
+          additional={null}
+          childrenDisplay='flex'>
           {
             categoryList.map((category) => {
               return (
@@ -44,7 +46,8 @@ function HomePage() {
         <Section
           title='Productos destacados'
           subTitle='Lorem ipsum dolor sit amet.'
-          image={featuredAd}>
+          additional={featuredAd}
+          childrenDisplay='grid'>
           {
             featuredList.map((product) => {
               return (
@@ -64,7 +67,8 @@ function HomePage() {
         <Section
           title='Productos populares'
           subTitle='Lorem ipsum dolor sit amet.'
-          image={null}>
+          additional={null}
+          childrenDisplay='flex'>
           {
             popularList.map((product) => {
               return (
@@ -83,7 +87,8 @@ function HomePage() {
         <Section
           title='Últimos productos'
           subTitle='Lorem ipsum dolor sit amet.'
-          image={newAd}>
+          additional={newAd}
+          childrenDisplay='grid'>
           {
             newList.map((product) => {
               return (
@@ -92,6 +97,9 @@ function HomePage() {
             })
           }
         </Section>
+
+        {/* Services */}
+        <AllServices />
       </div>
     </>
   );
