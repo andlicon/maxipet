@@ -2,20 +2,13 @@ import React from 'react';
 import Image from 'next/image'
 import Header from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
-import Section from '../components/Section';
-import Brand from '../components/Brand'
 import SectionCategory from '../components/SectionCategory';
 import SectionFeatured from '../components/SectionFeatured';
 import SectionPopular from '../components/SectionPopular';
 import SectionNews from '../components/SectionNews';
 import AllServices from '../components/AllServices';
-import {
-  bannerImages,
-  brandAdditional
-} from '../constant/images';
-import {
-  brandList
-} from '../constant/brand';
+import SectionBrand from '../components/SectionBrand';
+import { bannerImages } from '../constant/images';
 import ad1 from '../images/ad1.png';
 import ad2 from '../images/ad2.png';
 import ad3 from '../images/ad3.png';
@@ -40,21 +33,7 @@ function HomePage() {
         </div>
         <SectionNews />
         <AllServices />
-
-        {/* News products */}
-        <Section
-          title='Trabajamos con las mejores marcas'
-          subTitle='Lorem ipsum dolor sit amet.'
-          additional={brandAdditional}
-          childrenDisplay='flex'>
-          {
-            brandList.map((brand, index) => {
-              return (
-                <Brand brand={brand} key={index} background={false} />
-              )
-            })
-          }
-        </Section>
+        <SectionBrand />
       </div >
     </>
   );
