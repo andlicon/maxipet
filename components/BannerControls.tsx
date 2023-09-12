@@ -1,5 +1,5 @@
-import Raect from 'react';
-import DisplayChanger from './DisplayChanger';
+import Raect from "react";
+import DisplayChanger from "./DisplayChanger";
 
 const BannerControls = ({
   images,
@@ -7,7 +7,7 @@ const BannerControls = ({
   imageHandler }) => {
 
   return (
-    <div className='banner__controls flex gap-2'>
+    <div className="banner__controls flex gap-2">
       {
         images.map((element, index) => {
           return (

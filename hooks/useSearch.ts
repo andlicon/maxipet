@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useSearch = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const isEmpty = search?.length == 0;
 

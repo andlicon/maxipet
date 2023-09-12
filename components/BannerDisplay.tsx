@@ -1,7 +1,7 @@
-import React from 'react';
-import { useBanner } from '../hooks/useBanner';
-import Banner from '../components/Banner';
-import BannerControls from '../components/BannerControls';
+import React from "react";
+import { useBanner } from "../hooks/useBanner";
+import Banner from "../components/Banner";
+import BannerControls from "../components/BannerControls";
 
 const BannerDisplay = ({ images }) => {
   const {
@@ -11,7 +11,7 @@ const BannerDisplay = ({ images }) => {
   } = useBanner({ images });
 
   return (
-    <div className='banner__display'>
+    <div className="banner__display">
       <Banner image={current} />
       <BannerControls
         images={images}
