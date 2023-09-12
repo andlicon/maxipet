@@ -8,8 +8,8 @@ import AllServices from '../components/AllServices';
 import Brand from '../components/Brand'
 import SectionCategory from '../components/SectionCategory';
 import SectionFeatured from '../components/SectionFeatured';
+import SectionPopular from '../components/SectionPopular';
 import {
-  popularList,
   newList
 } from '../constant/products';
 import {
@@ -39,20 +39,7 @@ function HomePage() {
           <Image src={ad1} alt="A shovel with dog food" className='w-1/2' />
         </div>
 
-        {/* popular ones */}
-        <Section
-          title='Productos populares'
-          subTitle='Lorem ipsum dolor sit amet.'
-          additional={null}
-          childrenDisplay='flex'>
-          {
-            popularList.map((product) => {
-              return (
-                <ProductCard product={product} key={product.id} />
-              )
-            })
-          }
-        </Section>
+        <SectionPopular />
 
         {/* add */}
         <div className='ad w-full'>
