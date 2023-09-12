@@ -90,3 +90,48 @@ export const featuredList: Product[] = [
     price: 9.99
   }
 ]
+
+export const newList: Product[] = [
+  {
+    id: 12,
+    image: productImage.src,
+    name: '1st Choice Puppy Chiot',
+    rate: 3,
+    price: 9.99
+  },
+  {
+    id: 13,
+    image: productImage.src,
+    name: '1st Choice Puppy Chiot',
+    rate: 3,
+    price: 9.99
+  },
+  {
+    id: 14,
+    image: productImage.src,
+    name: '1st Choice Puppy Chiot',
+    rate: 3,
+    price: 9.99
+  },
+  {
+    id: 15,
+    image: productImage.src,
+    name: '1st Choice Puppy Chiot',
+    rate: 3,
+    price: 9.99
+  },
+  {
+    id: 16,
+    image: productImage.src,
+    name: '1st Choice Puppy Chiot',
+    rate: 3,
+    price: 9.99
+  },
+  {
+    id: 17,
+    image: productImage.src,
+    name: '1st Choice Puppy Chiot',
+    rate: 3,
+    price: 9.99
+  }
+]

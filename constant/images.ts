@@ -26,5 +26,10 @@ export const bannerImages = [
 
 export const featuredAd = {
   image: featureAd.src,
-  side: 'left'
+  side: false
+}
+
+export const newAd = {
+  image: featureAd.src,
+  side: true
 }

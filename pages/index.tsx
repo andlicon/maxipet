@@ -4,13 +4,17 @@ import BannerDisplay from '../components/BannerDisplay';
 import Section from '../components/Section';
 import Category from '../components/Category'
 import ProductCard from '../components/ProductCard'
-import { bannerImages } from '../constant/images';
 import { categoryList } from '../constant/categories';
 import {
   popularList,
-  featuredList
+  featuredList,
+  newList
 } from '../constant/products';
-import { featuredAd } from '../constant/images';
+import {
+  bannerImages,
+  featuredAd,
+  newAd
+} from '../constant/images';
 
 function HomePage() {
   return (
@@ -53,6 +57,20 @@ function HomePage() {
           image={null}>
           {
             popularList.map((product) => {
+              return (
+                <ProductCard product={product} key={product.id} />
+              )
+            })
+          }
+        </Section>
+
+        {/* News products */}
+        <Section
+          title='Últimos productos'
+          subTitle='Lorem ipsum dolor sit amet.'
+          image={newAd}>
+          {
+            newList.map((product) => {
               return (
                 <ProductCard product={product} key={product.id} />
               )
