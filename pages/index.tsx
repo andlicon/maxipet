@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 import NavBar from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import SectionCategory from '../components/SectionCategory';
@@ -19,23 +19,27 @@ function HomePage() {
     <>
       <NavBar />
       <BannerDisplay images={bannerImages} />
-      <div className='container page__content mx-auto'>
+      <div className="container page__content mx-auto">
         <SectionCategory />
         <SectionFeatured />
         {/* add */}
-        <div className='flex ad w-full'>
-          <Image src={ad2} alt='A dog eating its dog food' className='w-1/2' />
-          <Image src={ad1} alt='A shovel with dog food' className='w-1/2' />
+        <div className="flex ad w-full">
+          <Image src={ad2} alt="A dog eating its dog food" className="w-1/2" />
+          <Image src={ad1} alt="A shovel with dog food" className="w-1/2" />
         </div>
         <SectionPopular />
         {/* add */}
-        <div className='ad w-full'>
-          <Image src={ad3} alt='A happy dog lay down over the grass, playing with its toy' className='w-full' />
+        <div className="ad w-full">
+          <Image
+            src={ad3}
+            alt="A happy dog lay down over the grass, playing with its toy"
+            className="w-full"
+          />
         </div>
         <SectionNews />
         <SectionServices />
         <SectionBrand />
-      </div >
+      </div>
       <Footer />
     </>
   );
