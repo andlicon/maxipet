@@ -11,11 +11,11 @@ const ProductCard = ({ product }) => {
       <div className='productCard__info mt-4 me-2'>
         <p className='productCard__name'>{product.name}</p>
         {
-          rateArray.map((number) => {
+          rateArray.map((number, index) => {
             const isChecked = product.rate >= number;
 
             return (
-              <span className={`rate${isChecked ? ' checked' : ''}`}>
+              <span className={`rate${isChecked ? ' checked' : ''}`} key={index}>
               </span>
             )
           })
