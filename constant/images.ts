@@ -30,11 +30,19 @@ export const bannerImages = [
 ]
 
 export const featuredAd = {
-  image: featureAd.src,
+  contentType: 'image',
+  content: featureAd.src,
   placement: TO_LEFT
 }
 
 export const newAd = {
-  image: featureAd.src,
+  contentType: 'image',
+  content: featureAd.src,
   placement: TO_RIGHT
+}
+
+export const serviceAdditional = {
+  contentType: 'text',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed.',
+  placement: TO_TOP
 }

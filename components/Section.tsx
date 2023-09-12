@@ -1,19 +1,44 @@
 import React from 'react';
 import {
   TO_TOP,
+  TO_LEFT,
   TO_RIGHT
 } from '../constant/components';
 
 const Section = ({ children, title, subTitle, additional, childrenDisplay }) => {
+
+  const getAdditionalElement = (classes: string) => {
+    if (additional.contentType == 'image') {
+      return <img src={additional.content} className={classes} alt="" />;
+    }
+    return <p className={classes}>{additional.content}</p>
+  }
+
+  const displayAdditional = () => {
+    let element = null;
+
+    if (additional.placement == TO_TOP) {
+      element = getAdditionalElement('w-full');
+    }
+    else if (additional.placement == TO_LEFT) {
+      element = getAdditionalElement('md:w-full section__img lg:me-5');
+    }
+    else if (additional.placement == TO_RIGHT) {
+      element = getAdditionalElement('md:w-full section__img lg:order-1 lg:ms-5');
+    }
+
+    return element;
+  }
+
   return (
     <div className='container section'>
       <div>
         <span className='section__subtitle'>{subTitle}</span>
         <h2 className='section__title'>{title.toUpperCase()}</h2>
-        <div className='flex sm:flex-col md:flex-row'>
+        <div className={`flex sm:flex-col md:flex-row${additional?.placement == TO_TOP ? ' flex-wrap' : ''}`}>
           {
             additional
-              ? <img src={additional.image} className={`md:w-full section__img ${additional.placement == TO_RIGHT ? 'lg:order-1 lg:ms-5' : 'lg:me-5'}`} alt="" />
+              ? displayAdditional()
               : null
           }
           {
