@@ -46,3 +46,9 @@ export const serviceAdditional = {
   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed.',
   placement: TO_TOP
 }
+
+export const brandAdditional = {
+  contentType: 'text',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed.',
+  placement: TO_LEFT
+}
