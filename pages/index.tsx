@@ -6,7 +6,7 @@ import SectionCategory from '../components/SectionCategory';
 import SectionFeatured from '../components/SectionFeatured';
 import SectionPopular from '../components/SectionPopular';
 import SectionNews from '../components/SectionNews';
-import AllServices from '../components/AllServices';
+import SectionServices from '../components/SectionServices';
 import SectionBrand from '../components/SectionBrand';
 import { bannerImages } from '../constant/images';
 import ad1 from '../images/ad1.png';
@@ -32,7 +32,7 @@ function HomePage() {
           <Image src={ad3} alt="A happy dog lay down over the grass, playing with its toy" className='w-full' />
         </div>
         <SectionNews />
-        <AllServices />
+        <SectionServices />
         <SectionBrand />
       </div >
     </>
