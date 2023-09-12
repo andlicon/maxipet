@@ -1,6 +1,6 @@
 export interface Button {
-  label: string,
-  icon: string
+  label: string;
+  icon: string;
 }
 
 export const TO_TOP = 0;
