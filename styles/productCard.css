@@ -1,3 +1,8 @@
+.productCard {
+  width: fit-content;
+  max-height: 334px;
+}
+
 .productCard__img {
   height: 200px;
   margin: 0 auto;
