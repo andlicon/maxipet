@@ -7,14 +7,13 @@ import ProductCard from '../components/ProductCard';
 import AllServices from '../components/AllServices';
 import Brand from '../components/Brand'
 import SectionCategory from '../components/SectionCategory';
+import SectionFeatured from '../components/SectionFeatured';
 import {
   popularList,
-  featuredList,
   newList
 } from '../constant/products';
 import {
   bannerImages,
-  featuredAd,
   newAd,
   brandAdditional
 } from '../constant/images';
@@ -32,36 +31,7 @@ function HomePage() {
       <BannerDisplay images={bannerImages} />
       <div className="container page__content mx-auto">
         <SectionCategory />
-        {/* <div className="container page__content mx-auto">
-        {/* all categories
-      <Section
-        title='Una gran variedad de categorías'
-        subTitle='Lorem ipsum dolor sit amet.'
-        additional={null}
-        childrenDisplay='flex'>
-        {
-          categoryList.map((category) => {
-            return (
-              <Category category={category} key={category.id} />
-            )
-          })
-        }
-      </Section> */}
-
-        {/* featured products */}
-        <Section
-          title='Productos destacados'
-          subTitle='Lorem ipsum dolor sit amet.'
-          additional={featuredAd}
-          childrenDisplay='grid'>
-          {
-            featuredList.map((product) => {
-              return (
-                <ProductCard product={product} key={product.id} />
-              )
-            })
-          }
-        </Section>
+        <SectionFeatured />
 
         {/* add */}
         <div className='flex ad w-full'>
