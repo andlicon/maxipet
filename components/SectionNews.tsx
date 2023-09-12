@@ -10,7 +10,8 @@ const SectionPopular = () => {
       title='Últimos productos'
       subTitle='Lorem ipsum dolor sit amet.'
       additional={newAd}
-      childrenDisplay='grid'>
+      childrenDisplay='grid'
+      id='new'>
       {
         newList.map((product) => {
           return (

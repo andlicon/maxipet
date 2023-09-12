@@ -14,6 +14,7 @@ import '../styles/category.css';
 import '../styles/productCard.css';
 import '../styles/service.css';
 import '../styles/brand.css';
+import '../styles/Footer.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {

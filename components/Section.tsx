@@ -5,7 +5,7 @@ import {
   TO_RIGHT
 } from '../constant/components';
 
-const Section = ({ children, title, subTitle, additional, childrenDisplay }) => {
+const Section = ({ children, title, subTitle, additional, childrenDisplay, id }) => {
 
   const getAdditionalElement = (classes: string) => {
     if (additional.contentType == 'image') {
@@ -31,7 +31,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
   }
 
   return (
-    <div className='container section'>
+    <div className='container section' id={id}>
       <div>
         <span className='section__subtitle'>{subTitle}</span>
         <h2 className='section__title'>{title.toUpperCase()}</h2>

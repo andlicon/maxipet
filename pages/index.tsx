@@ -8,6 +8,7 @@ import SectionPopular from '../components/SectionPopular';
 import SectionNews from '../components/SectionNews';
 import SectionServices from '../components/SectionServices';
 import SectionBrand from '../components/SectionBrand';
+import Footer from '../components/Footer';
 import { bannerImages } from '../constant/images';
 import ad1 from '../images/ad1.png';
 import ad2 from '../images/ad2.png';
@@ -35,6 +36,7 @@ function HomePage() {
         <SectionServices />
         <SectionBrand />
       </div >
+      <Footer />
     </>
   );
 }

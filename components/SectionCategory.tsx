@@ -11,7 +11,8 @@ const SectionCategory = () => {
         title='Una gran variedad de categorías'
         subTitle='Lorem ipsum dolor sit amet.'
         additional={null}
-        childrenDisplay='flex'>
+        childrenDisplay='flex'
+        id='comprar-mascota'>
         {
           categoryList.map((category) => {
             return (

@@ -10,7 +10,8 @@ const SectionBrand = () => {
       title='Trabajamos con las mejores marcas'
       subTitle='Lorem ipsum dolor sit amet.'
       additional={brandAdditional}
-      childrenDisplay='flex'>
+      childrenDisplay='flex'
+      id='comprar-marca'>
       {
         brandList.map((brand, index) => {
           return (

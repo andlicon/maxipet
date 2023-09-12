@@ -10,7 +10,8 @@ const SectionServices = () => {
       title='Nuestros servicios'
       subTitle='Lorem ipsum dolor sit amet.'
       additional={serviceAdditional}
-      childrenDisplay='grid'>
+      childrenDisplay='grid'
+      id='servicios'>
       {
         serviceList.map(service => {
           return (
