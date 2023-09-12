@@ -1,4 +1,5 @@
 import banner from '../images/banner.png';
+import featureAd from '../images/featuredProductAd.png';
 
 export const bannerImages = [
   {
@@ -22,3 +23,8 @@ export const bannerImages = [
     id: 4
   }
 ]
+
+export const featuredAd = {
+  image: featureAd.src,
+  side: 'left'
+}
