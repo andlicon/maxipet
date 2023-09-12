@@ -18,7 +18,7 @@ const Section = ({ children, title, subTitle, additional, childrenDisplay }) => 
     let element = null;
 
     if (additional.placement == TO_TOP) {
-      element = getAdditionalElement('w-full');
+      element = getAdditionalElement('w-full my-5');
     }
     else if (additional.placement == TO_LEFT) {
       element = getAdditionalElement('md:w-full section__img lg:me-5');
