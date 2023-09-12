@@ -31,7 +31,8 @@ function HomePage() {
         <Section
           title='Una gran variedad de categorías'
           subTitle='Lorem ipsum dolor sit amet.'
-          additional={null}>
+          additional={null}
+          childrenDisplay='flex'>
           {
             categoryList.map((category) => {
               return (
@@ -45,7 +46,8 @@ function HomePage() {
         <Section
           title='Productos destacados'
           subTitle='Lorem ipsum dolor sit amet.'
-          additional={featuredAd}>
+          additional={featuredAd}
+          childrenDisplay='grid'>
           {
             featuredList.map((product) => {
               return (
@@ -65,7 +67,8 @@ function HomePage() {
         <Section
           title='Productos populares'
           subTitle='Lorem ipsum dolor sit amet.'
-          additional={null}>
+          additional={null}
+          childrenDisplay='flex'>
           {
             popularList.map((product) => {
               return (
@@ -84,7 +87,8 @@ function HomePage() {
         <Section
           title='Últimos productos'
           subTitle='Lorem ipsum dolor sit amet.'
-          additional={newAd}>
+          additional={newAd}
+          childrenDisplay='grid'>
           {
             newList.map((product) => {
               return (
