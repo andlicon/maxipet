@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import Header from '../components/NavBar';
+import NavBar from '../components/NavBar';
 import BannerDisplay from '../components/BannerDisplay';
 import SectionCategory from '../components/SectionCategory';
 import SectionFeatured from '../components/SectionFeatured';
@@ -16,7 +16,7 @@ import ad3 from '../images/ad3.png';
 function HomePage() {
   return (
     <>
-      <Header />
+      <NavBar />
       <BannerDisplay images={bannerImages} />
       <div className="container page__content mx-auto">
         <SectionCategory />
