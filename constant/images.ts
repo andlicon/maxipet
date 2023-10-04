@@ -1,7 +1,7 @@
+import { StaticImageData } from 'next/image';
 import banner from '../images/banner.png';
 import featureAd from '../images/featuredProductAd.png';
 import { TO_TOP, TO_LEFT, TO_RIGHT } from './components';
-import { StaticImageData } from "next/image"
 
 export const bannerImages = [
   {
@@ -55,5 +55,5 @@ export const brandAdditional = {
 export interface Image {
   url: StaticImageData;
   alt: string;
-  id: number
+  id: number;
 }

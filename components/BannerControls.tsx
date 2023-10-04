@@ -2,11 +2,7 @@ import DisplayChanger from './DisplayChanger';
 import { useBannerContext } from '../context/bannerContext';
 
 const BannerControls = () => {
-  const {
-    images,
-    currentImage,
-    setCurrentImage
-  } = useBannerContext();
+  const { images, currentImage, setCurrentImage } = useBannerContext();
 
   const currentId = currentImage.id;
 

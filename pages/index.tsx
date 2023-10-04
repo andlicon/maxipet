@@ -9,7 +9,6 @@ import SectionNews from '../components/SectionNews';
 import SectionServices from '../components/SectionServices';
 import SectionBrand from '../components/SectionBrand';
 import Footer from '../components/Footer';
-import { bannerImages } from '../constant/images';
 import ad1 from '../images/ad1.png';
 import ad2 from '../images/ad2.png';
 import ad3 from '../images/ad3.png';
@@ -18,7 +17,7 @@ function HomePage() {
   return (
     <>
       <NavBar />
-      <BannerDisplay images={bannerImages} />
+      <BannerDisplay />
       <div className="container page__content mx-auto">
         <SectionCategory />
         <SectionFeatured />
