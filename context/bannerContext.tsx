@@ -18,12 +18,12 @@ export const BannerContextProvider = ({ children }: Props) => {
   const [images, setImages] = React.useState(bannerImages)
   const [currentImage, setCurrentImage] = React.useState(bannerImages[0])
 
-  const value = {
-    images,
-    setImages,
-    currentImage,
-    setCurrentImage
-  }
+  const value = React.useMemo(
+    () => (
+      {
+        images, setImages, currentImage, setCurrentImage
+      }
+    ), [images, setImages, currentImage, setCurrentImage]);
 
   return (
     <BannerContext.Provider value={value}>

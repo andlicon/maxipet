@@ -4,7 +4,6 @@ import Banner from './Banner';
 import BannerControls from './BannerControls';
 import { Image } from '../constant/images';
 import { BannerContextProvider } from '../context/bannerContext';
-import { useBannerContext } from '../context/bannerContext';
 
 interface BannerDisplayProps {
   images: Image[];
@@ -16,7 +15,7 @@ const BannerDisplay = ({ images }: BannerDisplayProps) => {
   return (
     <BannerContextProvider>
       <div className="banner__display">
-        <Banner url={current.url} alt={current.alt} />
+        <Banner />
         <BannerControls
           images={images}
           imageHandler={onChangeImageHandler}
