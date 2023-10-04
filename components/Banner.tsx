@@ -6,6 +6,8 @@ const Banner = () => {
     currentImage
   } = useBannerContext();
 
+  console.log(currentImage.url.src);
+
   return (
     <div className="banner">
       <img
