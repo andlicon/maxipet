@@ -1,14 +1,17 @@
 import React from 'react';
-import { StaticImageData } from 'next/image';
+import { useBannerContext } from '../context/bannerContext';
 
-interface BannerProps {
-  url: StaticImageData;
-  alt: string;
-}
+const Banner = () => {
+  const { currentImage } = useBannerContext();
 
-const Banner = ({ url, alt }: BannerProps) => (
-  <div className="banner">
-    <img src={url.src} alt={alt} className="banner_img mx-auto" />
-  </div>
-);
+  return (
+    <div className="banner">
+      <img
+        src={currentImage.url.src}
+        alt={currentImage.alt}
+        className="banner_img mx-auto"
+      />
+    </div>
+  );
+};
 export default Banner;
