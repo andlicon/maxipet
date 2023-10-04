@@ -8,7 +8,7 @@ const BannerDisplay = ({ images }) => {
 
   return (
     <div className="banner__display">
-      <Banner image={current} />
+      <Banner url={current.url} id={current.id} alt={current.alt} />
       <BannerControls
         images={images}
         imageHandler={onChangeImageHandler}
