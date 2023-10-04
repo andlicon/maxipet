@@ -1,7 +1,7 @@
-import React, { useState, createContext, useContext } from 'react';
+import React from 'react';
 import { Image, bannerImages } from '../constant/images';
 
-const BannerContext = createContext(
+const BannerContext = React.createContext(
   {} as {
     images: Image[]
     setImages: React.Dispatch<React.SetStateAction<Image[]>>
@@ -15,15 +15,15 @@ interface Props {
 }
 
 export const BannerContextProvider = ({ children }: Props) => {
-  const [images, setImages] = useState(bannerImages);
-  const [currentImage, setCurrentImage] = useState(null);
+  const [images, setImages] = React.useState(bannerImages)
+  const [currentImage, setCurrentImage] = React.useState(bannerImages[0])
 
   const value = {
     images,
     setImages,
     currentImage,
     setCurrentImage
-  };
+  }
 
   return (
     <BannerContext.Provider value={value}>
@@ -34,4 +34,4 @@ export const BannerContextProvider = ({ children }: Props) => {
   );
 };
 
-export const useBannerContext = useContext(BannerContext);
+export const useBannerContext = () => React.useContext(BannerContext);
