@@ -1,10 +1,9 @@
 import React from 'react';
-import { StaticImageData } from "next/image"
+import { StaticImageData } from 'next/image';
 
 interface BannerProps {
-  url: StaticImageData
-  alt: string
-  id: number
+  url: StaticImageData;
+  alt: string;
 }
 
 const Banner = ({ url, alt }: BannerProps) => (
