@@ -2,8 +2,13 @@ import React from 'react';
 import { useBanner } from '../hooks/useBanner';
 import Banner from './Banner';
 import BannerControls from './BannerControls';
+import { Image } from '../constant/images';
 
-const BannerDisplay = ({ images }) => {
+interface BannerDisplayProps {
+  images: Image[];
+};
+
+const BannerDisplay = ({ images }: BannerDisplayProps) => {
   const { current, onChangeImageHandler } = useBanner({ images });
 
   return (

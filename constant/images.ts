@@ -1,6 +1,7 @@
 import banner from '../images/banner.png';
 import featureAd from '../images/featuredProductAd.png';
 import { TO_TOP, TO_LEFT, TO_RIGHT } from './components';
+import { StaticImageData } from "next/image"
 
 export const bannerImages = [
   {
@@ -50,3 +51,9 @@ export const brandAdditional = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed.',
   placement: TO_LEFT,
 };
+
+export interface Image {
+  url: StaticImageData;
+  alt: string;
+  id: number
+}
