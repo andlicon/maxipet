@@ -1,6 +1,13 @@
 import DisplayChanger from './DisplayChanger';
+import { Image } from '../constant/images';
 
-const BannerControls = ({ images, currentId, imageHandler }) => (
+interface BannerControlsProp {
+  images: Image[];
+  currentId: number;
+  imageHandler: Function;
+};
+
+const BannerControls = ({ images, currentId, imageHandler }: BannerControlsProp) => (
   <div className="banner__controls flex gap-2">
     {images.map((element, index) => (
       <DisplayChanger
