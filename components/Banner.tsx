@@ -5,13 +5,11 @@ const Banner = () => {
   const { currentImage } = useBannerContext();
 
   return (
-    <div className="banner">
-      <img
-        src={currentImage.url.src}
-        alt={currentImage.alt}
-        className="banner_img mx-auto"
-      />
-    </div>
+    <img
+      src={currentImage.url.src}
+      alt={currentImage.alt}
+      className="mx-auto"
+    />
   );
 };
 export default Banner;

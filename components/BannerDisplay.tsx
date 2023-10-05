@@ -5,7 +5,7 @@ import { BannerContextProvider } from '../context/bannerContext';
 
 const BannerDisplay = () => (
   <BannerContextProvider>
-    <div className="banner__display">
+    <div className="flex flow-col flex-nowrap items-center justify-center relative">
       <Banner />
       <BannerControls />
     </div>
