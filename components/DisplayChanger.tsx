@@ -1,9 +1,12 @@
 import React from 'react';
 
 const DisplayChanger = ({ current, changeImage }) => (
-  <span
-    className={`w-9 h-2 relative rounded decoration-transparent hover:cursor-pointer ${current ? 'bg-active' : 'bg-disabled'}`}
-    onClick={changeImage}
-  ></span>
+  <button
+    type="button"
+    className={`w-9 h-2 rounded decoration-transparent hover:cursor-pointer ${current ? 'bg-active' : 'bg-disabled'
+      }`}
+    onClick={changeImage}>
+    <span className="hidden">.</span>
+  </button>
 );
 export default DisplayChanger;
