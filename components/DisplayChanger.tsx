@@ -5,8 +5,7 @@ const DisplayChanger = ({ current, changeImage }) => (
     type="button"
     className={`w-9 h-2 rounded decoration-transparent
     hover:cursor-pointer
-    ${current ? 'bg-active' : 'bg-disabled'
-      }`}
+    ${current ? 'bg-active' : 'bg-disabled'}`}
     onClick={changeImage}
   >
     <span className="hidden">.</span>
