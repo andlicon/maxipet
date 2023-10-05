@@ -11,3 +11,4 @@ const DisplayChanger = ({ current, changeImage }) => (
   </button>
 );
 export default DisplayChanger;
+
