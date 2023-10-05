@@ -7,7 +7,7 @@ const BannerControls = () => {
   const currentId = currentImage.id;
 
   return (
-    <div className="banner__controls flex gap-2">
+    <div className="absolute flex gap-2 bottom-6 ">
       {images.map((element, index) => (
         <DisplayChanger
           key={index}

@@ -238,3 +238,14 @@ a {
 .page__content>* {
   margin-top: 3em;
 }
+
+@layer base {
+  .bg-disabled {
+    background-color: var(--color-disabled)
+  }
+
+  .bg-active {
+    background-color: var(--bg-active);
+  }
+
+}
