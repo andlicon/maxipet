@@ -3,7 +3,9 @@ import React from 'react';
 const DisplayChanger = ({ current, changeImage }) => (
   <button
     type="button"
-    className={`w-9 h-2 rounded decoration-transparent hover:cursor-pointer ${current ? 'bg-active' : 'bg-disabled'
+    className={`w-9 h-2 rounded decoration-transparent
+    hover:cursor-pointer
+    ${current ? 'bg-active' : 'bg-disabled'
       }`}
     onClick={changeImage}
   >
@@ -11,4 +13,3 @@ const DisplayChanger = ({ current, changeImage }) => (
   </button>
 );
 export default DisplayChanger;
-
